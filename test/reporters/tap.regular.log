@@ -25,7 +25,7 @@ ok 4 - unhandled-rejection [90m[2m›[22m[39m unhandled non-error rejection
 not ok 5 - Can't catch me
   ---
     name: Error
-    at: 't (unhandled-rejection.js:4:17)'
+    at: 'unhandled-rejection.js:4:17'
   ...
 
 ---tty-stream-chunk-separator
@@ -72,7 +72,7 @@ not ok 12 - test [90m[2m›[22m[39m fails
     name: AssertionError
     message: Test failed via `t.fail()`
     assertion: fail
-    at: 't (test.js:12:22)'
+    at: 'test.js:12:22'
   ...
 
 ---tty-stream-chunk-separator
@@ -98,7 +98,7 @@ not ok 15 - test [90m[2m›[22m[39m logs
     name: AssertionError
     message: Test failed via `t.fail()`
     assertion: fail
-    at: 't (test.js:21:4)'
+    at: 'test.js:21:4'
   ...
 
 ---tty-stream-chunk-separator
@@ -111,7 +111,7 @@ not ok 16 - test [90m[2m›[22m[39m formatted
       'Difference:': |-
         - 'foo'
         + 'bar'
-    at: 't (test.js:25:4)'
+    at: 'test.js:25:4'
   ...
 
 ---tty-stream-chunk-separator
@@ -123,7 +123,7 @@ not ok 17 - test [90m[2m›[22m[39m power-assert
     operator: '!'
     values:
       'Value is not falsy:': '''bar'''
-    at: 't (test.js:30:4)'
+    at: 'test.js:30:4'
   ...
 
 ---tty-stream-chunk-separator
