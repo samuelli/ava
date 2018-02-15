@@ -1,8 +1,29 @@
 'use strict';
+const fs = require('fs');
 const path = require('path');
 const globby = require('globby');
+const replaceString = require('replace-string');
 const Api = require('../../api');
 const Logger = require('../../lib/logger');
+
+exports.assert = (t, logFile, buffer) => {
+	let existing = null;
+	try {
+		existing = fs.readFileSync(logFile);
+	} catch (err) {}
+	if (existing === null || process.env.UPDATE_REPORTER_LOG) {
+		fs.writeFileSync(logFile, buffer);
+		existing = buffer;
+	}
+
+	t.is(buffer.toString('utf8'), existing.toString('utf8'));
+};
+
+exports.sanitizers = {
+	cwd: str => replaceString(str, process.cwd(), '~'),
+	posix: str => replaceString(str, '\\', '/'),
+	slow: str => str.replace(/(slow .+?)\(\d+ms\)/g, '$1 (000ms)')
+};
 
 const run = (type, reporter) => {
 	const projectDir = path.join(__dirname, '../fixture/report', type.toLowerCase());
