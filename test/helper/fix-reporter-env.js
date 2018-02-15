@@ -1,6 +1,12 @@
 'use strict';
 const lolex = require('lolex');
 
+const fixColors = () => {
+	// Force consistent and high-fidelity logs.
+	process.env.FORCE_COLOR = 3;
+	Object.defineProperty(process, 'platform', {value: 'darwin', enumerable: true, configurable: true});
+};
+
 module.exports = () => {
 	// Fix timestamps.
 	lolex.install({
@@ -10,7 +16,7 @@ module.exports = () => {
 		]
 	});
 
-	// Force consistent and high-fidelity logs.
-	process.env.FORCE_COLOR = 3;
-	Object.defineProperty(process, 'platform', {value: 'darwin', enumerable: true, configurable: true});
+	fixColors();
 };
+
+module.exports.onlyColors = fixColors;

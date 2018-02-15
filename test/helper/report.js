@@ -1,10 +1,21 @@
 'use strict';
+const childProcess = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const globby = require('globby');
+const proxyquire = require('proxyquire');
 const replaceString = require('replace-string');
-const Api = require('../../api');
 const Logger = require('../../lib/logger');
+
+const Api = proxyquire('../../api', {
+	'./lib/fork': proxyquire('../../lib/fork', {
+		child_process: Object.assign({}, childProcess, { // eslint-disable-line camelcase
+			fork(filename, argv, options) {
+				return childProcess.fork(path.join(__dirname, 'report-worker.js'), argv, options);
+			}
+		})
+	})
+});
 
 exports.assert = (t, logFile, buffer) => {
 	let existing = null;
@@ -22,7 +33,7 @@ exports.assert = (t, logFile, buffer) => {
 exports.sanitizers = {
 	cwd: str => replaceString(str, process.cwd(), '~'),
 	posix: str => replaceString(str, '\\', '/'),
-	slow: str => str.replace(/(slow .+?)\(\d+ms\)/g, '$1 (000ms)'),
+	slow: str => str.replace(/(slow.+?)\(\d+m?s\)/g, '$1 (000ms)'),
 	// TODO: Remove when Node.js 4 support is dropped
 	stacks: str => str.replace(/(\[90m|')t \((.+?\.js:\d+:\d+)\)/g, '$1$2').replace(/null\._onTimeout/g, 'Timeout.setTimeout')
 };
