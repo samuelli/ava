@@ -316,6 +316,6 @@ stderr
   Threw non-error: {"message":"null"}
   [1m[37mUncaught exception in test/fixture/report/regular/uncaught-exception.js[39m[22m
   [31mError: Can't catch me[39m
-  [90mnull._onTimeouuncaught-exception.js:5:9[39m
+  [90mTimeout.setTimeout (uncaught-exception.js:5:9)[39m
 
 ---tty-stream-chunk-separator
