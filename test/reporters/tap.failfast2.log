@@ -1,4 +1,6 @@
 TAP version 13
+
+---tty-stream-chunk-separator
 # a › fails
 not ok 1 - a [90m[2m›[22m[39m fails
   ---
@@ -8,8 +10,12 @@ not ok 1 - a [90m[2m›[22m[39m fails
     at: 'Test.t [as fn] (a.js:3:22)'
   ...
 
+---tty-stream-chunk-separator
+
 1..1
 # tests 1
 # pass 0
 # fail 1
 
+
+---tty-stream-chunk-separator

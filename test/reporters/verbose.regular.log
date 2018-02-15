@@ -1,47 +1,95 @@
 
+
+---tty-stream-chunk-separator
   [1m[37mUncaught exception in test/fixture/report/regular/bad-test-chain.js[39m[22m
   [31mTypeError: _.default.serial.test is not a function[39m
   [90mObject.<anonymous> (bad-test-chain.js:3:13)[39m
 
 
 
+
+---tty-stream-chunk-separator
 [31m  ✖ No tests found in test/fixture/report/regular/bad-test-chain.js[39m
-  [32m✔[39m slow [90m[2m›[22m[39m slow[90m[2m (209ms)[22m[39m
+
+---tty-stream-chunk-separator
   [32m✔[39m unhandled-rejection [90m[2m›[22m[39m passes
+
+---tty-stream-chunk-separator
   [32m✔[39m unhandled-rejection [90m[2m›[22m[39m unhandled non-error rejection
+
+---tty-stream-chunk-separator
   [1m[37mUnhandled rejection in test/fixture/report/regular/unhandled-rejection.js[39m[22m
   [31mError: Can't catch me[39m
   [90mTest.t [as fn] (unhandled-rejection.js:4:17)[39m
 
 
 
+
+---tty-stream-chunk-separator
   [1m[37mUnhandled rejection in test/fixture/report/regular/unhandled-rejection.js[39m[22m
   Threw non-error: {"message":"null"}
 
 
+
+---tty-stream-chunk-separator
   [32m✔[39m uncaught-exception [90m[2m›[22m[39m passes
+
+---tty-stream-chunk-separator
   [1m[37mUncaught exception in test/fixture/report/regular/uncaught-exception.js[39m[22m
   [31mError: Can't catch me[39m
   [90mTimeout.setTimeout (uncaught-exception.js:5:9)[39m
 
 
 
+
+---tty-stream-chunk-separator
 stdout
+
+---tty-stream-chunk-separator
 stderr
+
+---tty-stream-chunk-separator
   [33m- test [90m[2m›[22m[33m skip[39m
+
+---tty-stream-chunk-separator
   [34m- test [90m[2m›[22m[34m todo[39m
+
+---tty-stream-chunk-separator
   [32m✔[39m test [90m[2m›[22m[39m passes
+
+---tty-stream-chunk-separator
   [31m✖[39m test [90m[2m›[22m[39m fails [31mTest failed via `t.fail()`[39m
+
+---tty-stream-chunk-separator
   [31m✔[39m [31mtest [90m[2m›[22m[31m known failure[39m
+
+---tty-stream-chunk-separator
   [31m✖[39m test [90m[2m›[22m[39m no longer failing [31mTest was expected to fail, but succeeded, you should stop marking the test as failing[39m
+
+---tty-stream-chunk-separator
   [31m✖[39m test [90m[2m›[22m[39m logs [31mTest failed via `t.fail()`[39m
     [35mℹ[39m [90mhello[39m
     [35mℹ[39m [90mworld[39m
+
+---tty-stream-chunk-separator
   [31m✖[39m test [90m[2m›[22m[39m formatted 
+
+---tty-stream-chunk-separator
   [31m✖[39m test [90m[2m›[22m[39m power-assert 
+
+---tty-stream-chunk-separator
   [31m✖[39m test [90m[2m›[22m[39m bad throws [31mImproper usage of `t.throws()` detected[39m
+
+---tty-stream-chunk-separator
   [31m✖[39m test [90m[2m›[22m[39m bad notThrows [31mImproper usage of `t.notThrows()` detected[39m
+
+---tty-stream-chunk-separator
   [31m✖[39m test [90m[2m›[22m[39m implementation throws non-error [31mError thrown in test[39m
+
+---tty-stream-chunk-separator
+  [32m✔[39m slow [90m[2m›[22m[39m slow[90m[2m  (000ms)[22m[39m
+
+---tty-stream-chunk-separator
 
   [31m8 tests failed[39m
   [31m1 known failure[39m
@@ -105,16 +153,13 @@ stderr
 
   [90m~/test/fixture/report/regular/test.js:30[39m
 
-   [90m29:[39m   const foo = 'bar';    
-  [41m 30:   t.true(foo === 'foo');[49m
-   [90m31:[39m });                     
+   [90m29:[39m   const foo = 'bar';
+  [41m 30:   t.falsy(foo);     [49m
+   [90m31:[39m });                 
 
-  Value is not `true`:
+  Value is not falsy:
 
-  [33mfalse[39m
-
-  foo === "foo"
-  [90m=>[39m [33mfalse[39m
+  [34m'[39m[34mbar[39m[34m'[39m
 
   foo
   [90m=>[39m [34m'[39m[34mbar[39m[34m'[39m
@@ -186,3 +231,5 @@ stderr
 
   [33mnull[39m
 
+
+---tty-stream-chunk-separator

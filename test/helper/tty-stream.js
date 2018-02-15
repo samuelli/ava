@@ -1,18 +1,30 @@
 'use strict';
 const stream = require('stream');
-const getStream = require('get-stream');
 
-class TTYStream extends stream.PassThrough {
-	constructor(columns) {
+class TTYStream extends stream.Writable {
+	constructor(options) {
 		super();
 
 		this.isTTY = true;
-		this.columns = columns;
+		this.columns = options.columns;
+
+		this.sanitizers = options.sanitizers || [];
+		this.chunks = [];
+	}
+
+	_write(chunk, encoding, callback) {
+		this.chunks.push(
+			Buffer.from(this.sanitizers.reduce((str, sanitizer) => sanitizer(str), chunk.toString('utf8')), 'utf8'),
+			TTYStream.SEPARATOR
+		);
+		callback();
 	}
 
 	asBuffer() {
-		return getStream.buffer(this);
+		return Buffer.concat(this.chunks);
 	}
 }
+
+TTYStream.SEPARATOR = Buffer.from('\n---tty-stream-chunk-separator\n', 'utf8');
 
 module.exports = TTYStream;

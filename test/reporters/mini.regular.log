@@ -1,91 +1,165 @@
-[2K[G 
-   slow [90m[2m›[22m[39m slow
-
-  [32m1 passed[39m[2K[1A[2K[1A[2K[1A[2K[G 
+[2K[G
+---tty-stream-chunk-separator
+ 
    unhandled-rejection [90m[2m›[22m[39m passes
 
-  [32m2 passed[39m[2K[1A[2K[1A[2K[1A[2K[G 
+  [32m1 passed[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    unhandled-rejection [90m[2m›[22m[39m unhandled non-error rejection
 
-  [32m3 passed[39m[2K[1A[2K[1A[2K[1A[2K[G 
-   uncaught-exception [90m[2m›[22m[39m passes
-
-  [32m4 passed[39m[2K[1A[2K[1A[2K[1A[2K[Gstdout
+  [32m2 passed[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
  
    uncaught-exception [90m[2m›[22m[39m passes
 
-  [32m4 passed[39m[2K[1A[2K[1A[2K[1A[2K[Gstderr
+  [32m3 passed[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+stdout
+
+---tty-stream-chunk-separator
  
    uncaught-exception [90m[2m›[22m[39m passes
 
-  [32m4 passed[39m[2K[1A[2K[1A[2K[1A[2K[G 
+  [32m3 passed[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+stderr
+
+---tty-stream-chunk-separator
+ 
+   uncaught-exception [90m[2m›[22m[39m passes
+
+  [32m3 passed[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    test [90m[2m›[22m[39m passes
 
-  [32m5 passed[39m
+  [32m4 passed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m fails[39m
 
-  [32m5 passed[39m
+  [32m4 passed[39m
   [31m1 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m known failure[39m
 
-  [32m6 passed[39m
+  [32m5 passed[39m
   [31m1 known failure[39m
   [31m1 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m no longer failing[39m
 
-  [32m6 passed[39m
+  [32m5 passed[39m
   [31m1 known failure[39m
   [31m2 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m logs[39m
 
-  [32m6 passed[39m
+  [32m5 passed[39m
   [31m1 known failure[39m
   [31m3 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m formatted[39m
 
-  [32m6 passed[39m
+  [32m5 passed[39m
   [31m1 known failure[39m
   [31m4 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m power-assert[39m
 
-  [32m6 passed[39m
+  [32m5 passed[39m
   [31m1 known failure[39m
   [31m5 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m bad throws[39m
 
-  [32m6 passed[39m
+  [32m5 passed[39m
   [31m1 known failure[39m
   [31m6 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m bad notThrows[39m
 
-  [32m6 passed[39m
+  [32m5 passed[39m
   [31m1 known failure[39m
   [31m7 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G 
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
    [31mtest [90m[2m›[22m[31m implementation throws non-error[39m
+
+  [32m5 passed[39m
+  [31m1 known failure[39m
+  [31m8 failed[39m
+  [33m1 skipped[39m
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+ 
+   slow [90m[2m›[22m[39m slow
 
   [32m6 passed[39m
   [31m1 known failure[39m
   [31m8 failed[39m
   [33m1 skipped[39m
-  [34m1 todo[39m[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+  [34m1 todo[39m
+---tty-stream-chunk-separator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G
+---tty-stream-chunk-separator
+
   [32m6 passed[39m
   [31m1 known failure[39m
   [31m8 failed[39m
@@ -148,16 +222,13 @@
 
   [90m~/test/fixture/report/regular/test.js:30[39m
 
-   [90m29:[39m   const foo = 'bar';    
-  [41m 30:   t.true(foo === 'foo');[49m
-   [90m31:[39m });                     
+   [90m29:[39m   const foo = 'bar';
+  [41m 30:   t.falsy(foo);     [49m
+   [90m31:[39m });                 
 
-  Value is not `true`:
+  Value is not falsy:
 
-  [33mfalse[39m
-
-  foo === "foo"
-  [90m=>[39m [33mfalse[39m
+  [34m'[39m[34mbar[39m[34m'[39m
 
   foo
   [90m=>[39m [34m'[39m[34mbar[39m[34m'[39m
@@ -246,3 +317,5 @@
   [1m[37mUncaught exception in test/fixture/report/regular/uncaught-exception.js[39m[22m
   [31mError: Can't catch me[39m
   [90mTimeout.setTimeout (uncaught-exception.js:5:9)[39m
+
+---tty-stream-chunk-separator

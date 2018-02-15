@@ -27,7 +27,7 @@ test('formatted', t => {
 
 test('power-assert', t => {
 	const foo = 'bar';
-	t.true(foo === 'foo');
+	t.falsy(foo);
 });
 
 test('bad throws', t => {
