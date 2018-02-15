@@ -22,7 +22,9 @@ exports.assert = (t, logFile, buffer) => {
 exports.sanitizers = {
 	cwd: str => replaceString(str, process.cwd(), '~'),
 	posix: str => replaceString(str, '\\', '/'),
-	slow: str => str.replace(/(slow .+?)\(\d+ms\)/g, '$1 (000ms)')
+	slow: str => str.replace(/(slow .+?)\(\d+ms\)/g, '$1 (000ms)'),
+	// TODO: Remove when Node.js 4 support is dropped
+	stacks: str => str.replace(/t \((.+?\.js:\d+:\d+)\)/g, '$1').replace(/null\._onTimeout/g, 'Timeout.setTimeout')
 };
 
 const run = (type, reporter) => {

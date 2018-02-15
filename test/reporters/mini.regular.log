@@ -260,7 +260,7 @@ stderr
     [34m[4mhttps://github.com/avajs/ava#throwsfunctionpromise-error-message[24m[39m
 
   [90mfn (test.js:35:9)[39m
-  [90mt (test.js:37:11)[39m
+  [90mtest.js:37:11[39m
 
 
 
@@ -289,7 +289,7 @@ stderr
     [34m[4mhttps://github.com/avajs/ava#throwsfunctionpromise-error-message[24m[39m
 
   [90mfn (test.js:42:9)[39m
-  [90mt (test.js:44:14)[39m
+  [90mtest.js:44:14[39m
 
 
 
@@ -310,12 +310,12 @@ stderr
 
   [1m[37mUnhandled rejection in test/fixture/report/regular/unhandled-rejection.js[39m[22m
   [31mError: Can't catch me[39m
-  [90mt (unhandled-rejection.js:4:17)[39m
+  [90munhandled-rejection.js:4:17[39m
 
   [1m[37mUnhandled rejection in test/fixture/report/regular/unhandled-rejection.js[39m[22m
   Threw non-error: {"message":"null"}
   [1m[37mUncaught exception in test/fixture/report/regular/uncaught-exception.js[39m[22m
   [31mError: Can't catch me[39m
-  [90mTimeout.setTimeout (uncaught-exception.js:5:9)[39m
+  [90mnull._onTimeouuncaught-exception.js:5:9[39m
 
 ---tty-stream-chunk-separator

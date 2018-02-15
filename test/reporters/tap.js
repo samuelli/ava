@@ -12,7 +12,7 @@ const run = type => t => {
 
 	const tty = new TTYStream({
 		columns: 200,
-		sanitizers: [report.sanitizers.cwd, report.sanitizers.posix]
+		sanitizers: [report.sanitizers.cwd, report.sanitizers.posix, report.sanitizers.stacks]
 	});
 	const reporter = Object.assign(new TapReporter(), {
 		streams: {stderr: tty, stdout: tty}
