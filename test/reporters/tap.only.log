@@ -1,0 +1,11 @@
+TAP version 13
+# a › only
+ok 1 - a [90m[2m›[22m[39m only
+# b › passes
+ok 2 - b [90m[2m›[22m[39m passes
+
+1..2
+# tests 2
+# pass 2
+# fail 0
+
